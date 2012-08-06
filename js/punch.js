@@ -144,7 +144,7 @@ $(document).ready(function() {
                 var time = (new Date().getTime() - timestamp) / 1000.0;
                 $('#time').text(time);
                 $('.knockout .msg a').attr('href',
-                    'http://www.facebook.com/sharer.php?s=100&p[title]=Pokonałem Najmana w ' + time + ' s!' +
+                    'http://www.facebook.com/sharer.php?s=100&p[title]=Pobiłem Najmana w ' + time + ' s!' +
                     "&p[url]=http://hipsta.net");
                 return;
             }
