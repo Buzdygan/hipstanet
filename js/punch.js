@@ -67,7 +67,7 @@ $(document).ready(function() {
         right_glove = $('#right_glove'),
         person = $('#person'),
         camOn = false,
-        initialPunches = 2,
+        initialPunches = 20,
         punches,
         timestamp,
         animating;
