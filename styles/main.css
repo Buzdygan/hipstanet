@@ -1,0 +1,258 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+img.bg {
+    position: absolute;
+    left: 0% !important;
+    top: 0% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    z-index: -666;
+}
+
+#canvas-source,#canvas-blended {
+    display: none;
+}
+.black-background {
+    background-color: #fff;
+    -webkit-transition: background-color 200ms ease 600ms;
+    -moz-transition: background-color 200ms ease 600ms;
+    -o-transition: background-color 200ms ease 600ms;
+    -ms-transition: background-color 200ms ease 600ms;
+    transition: background-color 200ms ease 600ms;
+}
+
+video {
+	display: none;
+}
+
+#container {
+
+}
+#content {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    overflow: hidden;
+    z-index:0;
+}
+.loading {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -40px;
+}
+.browsers,
+.introduction {
+    display:  none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -27px;
+}
+.browsers p,
+.introduction p {
+    margin: 0 0 0.1em 0;
+    padding: 0;
+}
+.browsers a {
+    color: #333;
+}
+
+#header {
+    position: absolute;
+    height: 55px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/header-background.png") repeat-x;
+    overflow: hidden;
+    z-index:2;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.allow-message {
+    display: none;
+    line-height: 55px;
+    margin-left: 20px;
+}
+
+.lifebar {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    right: 20%;
+    height: 20px;
+    border: 1px solid silver;
+}
+
+.lifebar-inner {
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+}
+
+#footer {
+    position: absolute;
+    height: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/footer-background.png") repeat-x;
+    overflow: hidden;
+    z-index:1;
+}
+#footer a {
+    color: #aaa;
+    text-decoration: underline;
+}
+#footer a:hover {
+    color: #ccd56d;
+    text-decoration: underline;
+}
+
+#left_glove, #right_glove {
+    position: absolute;
+    width: 200px;
+    height: 160px;
+}
+#left_glove {
+    background: url('../images/left-glove.png');
+}
+#right_glove {
+    background: url('../images/right-glove.png');
+}
+
+#person {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+
+.browsers,.instructions,.knockout,.allow-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6666;
+    display: none;
+    background-color: white;
+}
+
+.allow-message {
+    display: none;
+}
+
+.allow-message p{
+    font-size: 30px;
+    margin-left: 200px;
+}
+.instructions > p.yes {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    z-index: 66666;
+}
+.instructions img {
+    position: absolute;
+    left: 350px;
+    width: 300px;
+}
+
+.instructions div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    padding-bottom: 70px;
+}
+
+.browsers div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -30px;
+}
+
+.browsers div p {
+    font-size: 16px !important;
+}
+
+.browsers div p a {
+    color: #003ec4;
+}
+
+.knockout div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -100px;
+    z-index: -666666;
+}
+
+.knockout img {
+    width: 210px !important;
+}
+
+.knockout h1 {
+    font-size: 60px;
+}
+
+.instructions div p {
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.instructions div button {
+    position: absolute;
+    right: 135px;
+    bottom: 0px;
+    font-size: 23px;
+    padding-left: 19px !important;
+    padding-right: 19px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.knockout button {
+    font-size: 27px;
+    padding-left: 29px !important;
+    padding-right: 29px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+div p.no {
+    color: #800000;
+}
+
+div p.yes {
+    color: #0064cd;
+}
+

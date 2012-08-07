@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Fatality!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/bootstrap.css"/>
+</head>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!--<img class="bg" src="images/ring.jpg"/>-->
+<div class="instructions">
+    <img src="images/assistant.png"/>
+    <div>
+            <p class="no">Bez klawiatury!</p>
+            <p class="no">Bez myszy!</p>
+            <p class="yes">Machaj rękami tak, jakbyś boksował!</p>
+            <button class="btn primary">Start!</button>
+    </div>
+</div>
+
+<div class="allow-message">
+    <img src="images/assistant.png" style="padding-left: 120px"/>
+    <p class="yes">
+        Kliknij "Zezwól" u góry żeby grać!
+    </p>
+</div>
+
+<div class="knockout">
+    <div>
+            <h1>Nokaut!</h1>
+            <img src="images/knockout.png"><br/>
+            <p class="msg">Pokonałeś Najmana w <span id="time"></span> s!<br/>
+                <a href="">
+                    Napisz o tym na Facebooku!
+                </a>
+            </p>
+            <button class="btn primary">Jeszcze raz!</button>
+			<div style="position: absolute; right: -300px; bottom: 30px">
+
+            	<div  class="fb-like" data-href="http://www.facebook.com/hipstanet" data-send="false" data-width="100" data-layout="button_count" data-show-faces="false"></div>
+			</div>
+    </div>
+</div>
+
+<div id="container">
+    <div id="content">
+        <video id="webcam" autoplay width="640" height="480"></video>
+
+        <canvas id="canvas-source" width="640" height="480"></canvas>
+        <canvas id="canvas-blended" width="640" height="480"></canvas>
+
+        <div id="person"></div>
+        <div id="left_glove"></div>
+        <div id="right_glove"></div>
+
+        <div class="lifebar">
+            <div class="lifebar-inner"></div>
+        </div>
+    </div>
+
+    <div class="loading">Ładowanie...</div>
+
+    <div class="browsers">
+        <div>
+            <h1>Przepraszamy</h1>
+            <p>Twoja przeglądarka nie obsługuje kamery <br/> internetowej.
+               Zainstaluj <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> żeby grać!</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs/jquery.js"></script>
+<script src="js/libs/motion.js"></script>
+<script src="js/libs/buffer-loader.js"></script>
+<script src="js/libs/easing.js"></script>
+<script src="js/punch.js"></script>
+
+</body></html>
